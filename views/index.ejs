@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- FONTS AND ICONS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Rubik+Mono+One&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a1a418fc9c.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="styles.css">
+    <title>Leylen Ramirez</title>
+</head>
+
+<body>
+    
+    <header>
+        <p class="title">Leylen Ramirez</p>
+
+        <nav>
+            <a href="#home" class="nav__link --accent">Inicio</a>
+            <a href="#about" class="nav__link">Sobre mi</a>
+            <a href="#projects" class="nav__link">Proyectos</a>
+            <a href="#contact" class="nav__link">Contacto</a>
+        </nav>
+    </header>
+
+    <section id="about" class="about">
+        <h2 class="title">Sobre mi</h2>
+        <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti nemo quod voluptatum atque quas ipsa quaerat modi, rem odio magni dolore, beatae autem, temporibus cumque quia animi libero. Rerum, labore.</p>
+
+        <div class="about__exp">
+            <p class="about__num">5+</p>
+            <p class="text --bigger">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio libero enim debitis eveniet in similique aut molestias</p>
+        </div>
+
+        <div class="about__boxes">
+            <div class="about__box --colored">
+                <i class="fa-brands fa-python"></i>
+                <p class="text --bigger">UI & UX DESIGNING</p>
+            </div>
+            <div class="about__box">
+                <i class="fa-brands fa-python"></i>
+                <p class="text --bigger">UI & UX DESIGNING</p>
+            </div>
+            <div class="about__box">
+                <i class="fa-brands fa-python"></i>
+                <p class="text --bigger">UI & UX DESIGNING</p>
+            </div>
+            <div class="about__box">
+                <i class="fa-brands fa-python"></i>
+                <p class="text --bigger">UI & UX DESIGNING</p>
+            </div>
+        </div>
+
+    </section>
+
+    <section id="services">
+        <h2 class="title">Los servicios que ofrezco:</h2>
+        <div class="services">
+            <% for( let i = 0; i < 6; i++ ) { %>
+                <div class="services__service
+                <% if (i%2 == 1) { %>
+                    --odd
+                <% } %>
+                ">
+                    <i class="fa-brands fa-python"></i>
+                    <p class="text --bigger">UI & UX DESIGNING</p>
+                    <p class="text">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                </div>
+            <% } %>
+        </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <section id="projects">
+
+        <h2 class="title">Mis proyectos:</h2>
+        <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis enim dolorem, expedita eius eveniet illo soluta accusantium, qui est tempore, deserunt sapiente cumque rerum totam saepe sint. Molestiae, eum sequi!</p>
+
+        <div class="projects">
+            <% for( let i = 0; i < 3; i++ ) { %>
+                <div class="project">
+                    <img class="project__img" src="/img/map.webp">
+                    <p class="title">TWINDER</p>
+                    <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident</p>
+                    <div class="project__links">
+                        <a href="github.com" class="project__link"><i class="fa-brands fa-github"></i></a>
+                        <a href="github.com" class="project__link"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                    
+                </div>
+            <% } %>
+        </div>
+        
+    </section>
+
+    <div class="divider"></div>
+
+    <section class="contact" id="contact">
+
+        <h2 class="title --contact">Contactame</h2>
+        <p class="text --bigger">Hagamos magia juntos.</p>
+
+        <div class="contact__links">
+            <a href="mailto:ramirezleylen@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+            <a href="www.linkedin.com/in/leylén-ramirez"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+
+    </section>
+
+    <footer>
+
+        <p class="footer__text">@2024 Leylen Ana Paz Ramirez</p>
+
+    </footer>
+
+</body>
+
+</html>
